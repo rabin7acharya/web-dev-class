@@ -64,8 +64,10 @@
       </div>
     </nav>
 
-    <section class="container cart-section d-flex">
-      <div class="cart-items bg-white p-5 col-8">
+    <section class="container cart-section d-flex flex-wrap">
+      <div
+        class="cart-items bg-white p-5 col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8"
+      >
         <div class="cart-header d-flex justify-content-between">
           <h4>Shopping Cart</h4>
           <h4>3 items</h4>
@@ -74,107 +76,189 @@
 
         <!-- cart item row layout  -->
 
-        <div class="cart-item d-flex gap-4 align-items-start mb-3">
-          <div class="cart-img-container col-2">
-            <img
-              src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9b26aa8f-0173-409b-b30a-7ce2d88573a4/custom-nike-dunk-low-by-you.png"
-              alt=""
-              width="100%"
-            />
-          </div>
-          <div class="cart-info-container col-3">
-            <h5>Nike Dunk Low</h5>
-            <p>
-              <span class="fw-bolder"> Category: </span>
-              Unisex
-            </p>
-            <p>
-              <span class="fw-bolder"> Size: </span>
-              7.5
-            </p>
-          </div>
-
+        <div class="cart-item d-flex gap-4 flex-wrap align-items-start mb-3">
           <div
-            class="btn-group qty-selector col-2"
-            role="group"
-            aria-label="Basic example"
+            class="card-header d-flex gap-4 col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5"
           >
-            <button type="button" class="btn btn-dark">-</button>
-            <input type="text" class="form-control" placeholder="0" />
-            <button type="button" class="btn btn-dark">+</button>
+            <div class="card-img-wrapper col-4">
+              <img
+                src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9b26aa8f-0173-409b-b30a-7ce2d88573a4/custom-nike-dunk-low-by-you.png"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div class="cart-info-container col-8">
+              <h5>Nike Dunk Low</h5>
+              <p>
+                <span class="fw-bolder"> Category: </span>
+                Unisex
+              </p>
+              <p>
+                <span class="fw-bolder"> Size: </span>
+                7.5
+              </p>
+            </div>
           </div>
+          <div
+            class="card-qty col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 d-flex gap-4"
+          >
+            <div
+              class="btn-group qty-selector col-5"
+              role="group"
+              aria-label="Basic example"
+            >
+              <button type="button" class="btn btn-dark">-</button>
+              <input type="text" class="form-control" placeholder="0" />
+              <button type="button" class="btn btn-dark">+</button>
+            </div>
 
-          <h5>Nrs. 7200.00</h5>
-          <button class="btn btn-danger">Remove</button>
+            <h5>Nrs. 7200.00</h5>
+          </div>
+          <button
+            class="btn btn-danger col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2"
+          >
+            Remove
+          </button>
         </div>
-        <div class="cart-item d-flex gap-4 align-items-start mb-3">
-          <div class="cart-img-container col-2">
-            <img
-              src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9b26aa8f-0173-409b-b30a-7ce2d88573a4/custom-nike-dunk-low-by-you.png"
-              alt=""
-              width="100%"
-            />
-          </div>
-          <div class="cart-info-container col-3">
-            <h5>Nike Dunk Low</h5>
-            <p>
-              <span class="fw-bolder"> Category: </span>
-              Unisex
-            </p>
-            <p>
-              <span class="fw-bolder"> Size: </span>
-              7.5
-            </p>
-          </div>
 
+        <div class="cart-item d-flex gap-4 flex-wrap align-items-start mb-3">
           <div
-            class="btn-group qty-selector col-2"
-            role="group"
-            aria-label="Basic example"
+            class="card-header d-flex gap-4 col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5"
           >
-            <button type="button" class="btn btn-dark">-</button>
-            <input type="text" class="form-control" placeholder="0" />
-            <button type="button" class="btn btn-dark">+</button>
+            <div class="card-img-wrapper col-4">
+              <img
+                src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9b26aa8f-0173-409b-b30a-7ce2d88573a4/custom-nike-dunk-low-by-you.png"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div class="cart-info-container col-8">
+              <h5>Nike Dunk Low</h5>
+              <p>
+                <span class="fw-bolder"> Category: </span>
+                Unisex
+              </p>
+              <p>
+                <span class="fw-bolder"> Size: </span>
+                7.5
+              </p>
+            </div>
           </div>
+          <div
+            class="card-qty col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 d-flex gap-4"
+          >
+            <div
+              class="btn-group qty-selector col-5"
+              role="group"
+              aria-label="Basic example"
+            >
+              <button type="button" class="btn btn-dark">-</button>
+              <input type="text" class="form-control" placeholder="0" />
+              <button type="button" class="btn btn-dark">+</button>
+            </div>
 
-          <h5>Nrs. 7200.00</h5>
-          <button class="btn btn-danger">Remove</button>
+            <h5>Nrs. 7200.00</h5>
+          </div>
+          <button
+            class="btn btn-danger col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2"
+          >
+            Remove
+          </button>
         </div>
-        <div class="cart-item d-flex gap-4 align-items-start mb-3">
-          <div class="cart-img-container col-2">
-            <img
-              src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9b26aa8f-0173-409b-b30a-7ce2d88573a4/custom-nike-dunk-low-by-you.png"
-              alt=""
-              width="100%"
-            />
-          </div>
-          <div class="cart-info-container col-3">
-            <h5>Nike Dunk Low</h5>
-            <p>
-              <span class="fw-bolder"> Category: </span>
-              Unisex
-            </p>
-            <p>
-              <span class="fw-bolder"> Size: </span>
-              7.5
-            </p>
-          </div>
 
+        <div class="cart-item d-flex gap-4 flex-wrap align-items-start mb-3">
           <div
-            class="btn-group qty-selector col-2"
-            role="group"
-            aria-label="Basic example"
+            class="card-header d-flex gap-4 col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5"
           >
-            <button type="button" class="btn btn-dark">-</button>
-            <input type="text" class="form-control" placeholder="0" />
-            <button type="button" class="btn btn-dark">+</button>
+            <div class="card-img-wrapper col-4">
+              <img
+                src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9b26aa8f-0173-409b-b30a-7ce2d88573a4/custom-nike-dunk-low-by-you.png"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div class="cart-info-container col-8">
+              <h5>Nike Dunk Low</h5>
+              <p>
+                <span class="fw-bolder"> Category: </span>
+                Unisex
+              </p>
+              <p>
+                <span class="fw-bolder"> Size: </span>
+                7.5
+              </p>
+            </div>
           </div>
+          <div
+            class="card-qty col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 d-flex gap-4"
+          >
+            <div
+              class="btn-group qty-selector col-5"
+              role="group"
+              aria-label="Basic example"
+            >
+              <button type="button" class="btn btn-dark">-</button>
+              <input type="text" class="form-control" placeholder="0" />
+              <button type="button" class="btn btn-dark">+</button>
+            </div>
 
-          <h5>Nrs. 7200.00</h5>
-          <button class="btn btn-danger">Remove</button>
+            <h5>Nrs. 7200.00</h5>
+          </div>
+          <button
+            class="btn btn-danger col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2"
+          >
+            Remove
+          </button>
+        </div>
+
+        <div class="cart-item d-flex gap-4 flex-wrap align-items-start mb-3">
+          <div
+            class="card-header d-flex gap-4 col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5"
+          >
+            <div class="card-img-wrapper col-4">
+              <img
+                src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9b26aa8f-0173-409b-b30a-7ce2d88573a4/custom-nike-dunk-low-by-you.png"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div class="cart-info-container col-8">
+              <h5>Nike Dunk Low</h5>
+              <p>
+                <span class="fw-bolder"> Category: </span>
+                Unisex
+              </p>
+              <p>
+                <span class="fw-bolder"> Size: </span>
+                7.5
+              </p>
+            </div>
+          </div>
+          <div
+            class="card-qty col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 d-flex gap-4"
+          >
+            <div
+              class="btn-group qty-selector col-5"
+              role="group"
+              aria-label="Basic example"
+            >
+              <button type="button" class="btn btn-dark">-</button>
+              <input type="text" class="form-control" placeholder="0" />
+              <button type="button" class="btn btn-dark">+</button>
+            </div>
+
+            <h5>Nrs. 7200.00</h5>
+          </div>
+          <button
+            class="btn btn-danger col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2"
+          >
+            Remove
+          </button>
         </div>
       </div>
-      <div class="cart-summary col-4 p-5 bg-warning-subtle">
+      <div
+        class="cart-summary col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 p-5 bg-warning-subtle"
+      >
         <h4>Order Summary</h4>
         <hr />
 
